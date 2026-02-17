@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forgers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="slider-container">
+        <div class="birthday-banner">
+            <div class="marquee">
+                <span>HAPPY BIRTHDAY ATE DAYNE! 🎂 &nbsp;</span>
+                <span>HAPPY BIRTHDAY ATE DAYNE! 🎂 &nbsp;</span>
+                <span>HAPPY BIRTHDAY ATE DAYNE! 🎂 &nbsp;</span>
+                <span>HAPPY BIRTHDAY ATE DAYNE! 🎂 &nbsp;</span>
+            </div>
+        </div>
+
+        <div id="heartIcon" class="heart-btn" onclick="showPopup()">❤️</div>
+
+        <button id="prevBtn" class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        
+        <div class="portrait-container">
+            <canvas id="portraitCanvas"></canvas>
+            <button id="backBtn" class="back-btn" onclick="hideSoloMode()">BACK</button>
+        </div>
+
+        <button id="nextBtn" class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div id="popupOverlay" class="popup-overlay">
+            <div class="popup-content">
+                <h1 class="popup-text">WOW PRETTY GURL</h1>
+                <button class="exit-popup-btn" onclick="enterSoloMode()">VIEW</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
